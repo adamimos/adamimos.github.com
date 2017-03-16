@@ -3,18 +3,15 @@
 Here is some text 2.
 
 
-      {% if site.JB.blogroll != false %}
-      <section>
-        <h2>Blogroll</h2>
-        <div class="category">
-          <ul>
-            {% for link in site.JB.brlist %}
-              <li><a href="{{ link.url }}" target="_blank">{{ link.text }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-      </section>
-      {% endif %}
+{% for post in paginator.posts %}
+<li>
+	<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	<h2 class="post-title">
+		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	</h2>
+	{{ post.excerpt | strip_html | strip_newlines }}
+</li>
+{% endfor %}
       
       
 <ul>
