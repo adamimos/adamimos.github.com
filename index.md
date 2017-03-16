@@ -1,6 +1,4 @@
-# Adam's Website
 
-Here is some text 2.
 
 
 {% for post in site.posts %}
@@ -12,6 +10,15 @@ Here is some text 2.
 	{{ post.excerpt | strip_html | strip_newlines }}
 </li>
 {% endfor %}
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
       
       
 <ul>
