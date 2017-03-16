@@ -3,7 +3,7 @@
   {% for post in site.posts %}
     
     <h2>{{ post.title }}</h2>
-    {{ post.date | date: "%b %-d, %Y" }}
+    <sup>{{ post.date | date: "%b %-d, %Y" }}</sup>
       {{ post.excerpt }}
     
   {% endfor %}
