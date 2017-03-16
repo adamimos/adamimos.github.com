@@ -1,10 +1,4 @@
-layout: page
-title: Hello World!
-tagline: Supporting tagline
----
-{% include JB/setup %}
-
-# Adam's test page
+# Adam's Intro Page
 
 Here is some text.
 
