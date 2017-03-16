@@ -2,7 +2,7 @@
 <ul>
   {% for post in site.posts %}
     
-      {{ post.title }}
+    <h2>{{ post.title }}</h2>
       {{ post.excerpt }}
     
   {% endfor %}
