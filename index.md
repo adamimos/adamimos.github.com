@@ -1,6 +1,6 @@
 # Adam's Intro Page
 
-Here is some text.
+Here is some text 2.
 
 <ul>
   {% for post in site.posts %}
