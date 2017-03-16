@@ -1,10 +1,10 @@
 
 <ul>
   {% for post in site.posts %}
-    <li>
+    
       {{ post.title }}
       {{ post.excerpt }}
-    </li>
+    
   {% endfor %}
 </ul>
 
