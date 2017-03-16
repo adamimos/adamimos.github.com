@@ -3,7 +3,7 @@
 Here is some text 2.
 
 
-{% for post in paginator.posts %}
+{% for post in site.posts %}
 <li>
 	<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 	<h2 class="post-title">
